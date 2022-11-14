@@ -6,7 +6,13 @@ import App from "./App";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter basename="/metabnb/">
-    <GlobalStyles styles={{ img: { width: "100%" } }} />
+    <GlobalStyles
+      styles={{
+        img: { width: "100%" },
+        p: { fontWeight: "400" },
+        body: { maxWidth: "100vw" },
+      }}
+    />
     <App />
   </BrowserRouter>
 );
