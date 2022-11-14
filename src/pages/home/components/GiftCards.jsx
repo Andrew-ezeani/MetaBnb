@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Box, Typography, Button } from "@mui/material";
-import image from "../../../assets/images/Frame 59546.png";
+import image from "../../../assets/Frame 59546.png";
 import { GradientText } from "../../../utils/utils";
 const NftGiftCard = () => {
   return (

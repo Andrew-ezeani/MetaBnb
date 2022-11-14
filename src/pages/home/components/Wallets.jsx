@@ -1,8 +1,8 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import metaMask from "../../../assets/images/metaMask.svg";
-import mbToken from "../../../assets/images/mbToken.svg";
-import openSea from "../../../assets/images/openSea.svg";
+import metaMask from "../../../assets/metaMask.svg";
+import mbToken from "../../../assets/mbToken.svg";
+import openSea from "../../../assets/openSea.svg";
 
 const Wallets = () => {
   return (

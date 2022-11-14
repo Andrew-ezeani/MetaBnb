@@ -1,19 +1,19 @@
-import frame1 from "../assets/images/Frame 1.png";
-import frame2 from "../assets/images/Frame 2.png";
-import frame3 from "../assets/images/Frame 3.png";
-import frame4 from "../assets/images/Frame 4.png";
-import frame5 from "../assets/images/Frame 5.png";
-import frame6 from "../assets/images/Frame 6.png";
-import frame7 from "../assets/images/Frame 7.png";
-import frame8 from "../assets/images/Frame 8.png";
-import frame9 from "../assets/images/Frame 9.png";
-import frame10 from "../assets/images/Frame 10.png";
-import frame11 from "../assets/images/Frame 11.png";
-import frame12 from "../assets/images/Frame 12.png";
-import frame13 from "../assets/images/Frame 13.png";
-import frame14 from "../assets/images/Frame 14.png";
-import frame15 from "../assets/images/Frame 15.png";
-import frame16 from "../assets/images/Frame 16.png";
+import frame1 from "../assets/Frame 1.png";
+import frame2 from "../assets/Frame 2.png";
+import frame3 from "../assets/Frame 3.png";
+import frame4 from "../assets/Frame 4.png";
+import frame5 from "../assets/Frame 5.png";
+import frame6 from "../assets/Frame 6.png";
+import frame7 from "../assets/Frame 7.png";
+import frame8 from "../assets/Frame 8.png";
+import frame9 from "../assets/Frame 9.png";
+import frame10 from "../assets/Frame 10.png";
+import frame11 from "../assets/Frame 11.png";
+import frame12 from "../assets/Frame 12.png";
+import frame13 from "../assets/Frame 13.png";
+import frame14 from "../assets/Frame 14.png";
+import frame15 from "../assets/Frame 15.png";
+import frame16 from "../assets/Frame 16.png";
 
 const apartmentData = [
   {

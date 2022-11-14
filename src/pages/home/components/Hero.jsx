@@ -5,7 +5,7 @@ import Container from "@mui/material/Container";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import { GradientText } from "../../../utils/utils";
-import heroPhoto from "../../../assets/images/Group 4028.svg";
+import heroPhoto from "../../../assets/Group 4028.svg";
 
 const Hero = () => {
   return (

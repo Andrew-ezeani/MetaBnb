@@ -6,7 +6,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import { useTheme } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import coloredLogo from "../../../assets/images/color logo.svg";
+import coloredLogo from "../../../assets/color logo.svg";
 import MobileMenu from "./MobileMenu";
 import { pages } from "../../../utils/utils";
 const NavBar = () => {
