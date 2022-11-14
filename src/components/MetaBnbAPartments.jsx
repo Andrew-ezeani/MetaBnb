@@ -3,7 +3,7 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { Rating } from "@mui/material";
+import Rating from "@mui/material/Rating";
 
 const ShowApartments = ({ img, name, price, distance, duration, rating }) => {
   const CardText = ({ text }) => {

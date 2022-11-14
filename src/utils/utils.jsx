@@ -1,9 +1,13 @@
 import React from "react";
-import { Box } from "@mui/material";
+import Box from "@mui/material/Box";
 import pageData from "./data";
 import { Link as RouterLink } from "react-router-dom";
-import { Link } from "@mui/material";
-import { Divider, List, ListItem, ListItemText } from "@mui/material";
+import Link from "@mui/material/Link";
+import Divider from "@mui/material/Divider";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemText from "@mui/material/ListItemText";
+
 const pages = pageData.map((page, index) => {
   return (
     <Link

@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Wallets from "./components/Wallets";
 import DisplayApartments from "../../components/DisplayApartments";
 import Container from "@mui/material/Container";
+import NftGiftCard from "./components/GiftCards";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       </Container>
       <Wallets />
       <DisplayApartments isSlice={true} />
+      <NftGiftCard />
     </>
   );
 };

@@ -1,5 +1,9 @@
 import React from "react";
-import { Box, Button, Container, TextField, Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
+import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
 import { GradientText } from "../../../utils/utils";
 import heroPhoto from "../../../assets/images/Group 4028.svg";
 

@@ -3,7 +3,7 @@ import MetaBnbApartments from "./MetaBnbAPartments";
 import apartmentData from "../data/apartmentData";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
-import { Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
 
 const DisplayApartments = ({ isSlice }) => {
   const apartments = !isSlice ? apartmentData : apartmentData.slice(0, 8);
