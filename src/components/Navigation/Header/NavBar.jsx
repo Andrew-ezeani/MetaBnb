@@ -9,7 +9,7 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import coloredLogo from "../../../assets/images/color logo.svg";
-import DrawerComp from "../../DrawerComp";
+import MobileMenu from "./MobileMenu";
 import { pages } from "../../../utils/utils";
 const NavBar = () => {
   const theme = useTheme();
@@ -25,7 +25,7 @@ const NavBar = () => {
         zIndex: theme.zIndex.drawer + 1,
       }}
     >
-      <Container>
+      <Container maxWidth={false} sx={{ maxWidth: "100vw" }}>
         <Toolbar>
           <Box
             sx={{
@@ -40,7 +40,7 @@ const NavBar = () => {
           </Box>
           {isMatch ? (
             <>
-              <DrawerComp />
+              <MobileMenu />
             </>
           ) : (
             <>

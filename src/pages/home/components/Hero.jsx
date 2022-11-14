@@ -6,7 +6,9 @@ import heroPhoto from "../../../assets/images/Group 4028.svg";
 const Hero = () => {
   return (
     <Container
+      maxWidth={false}
       sx={{
+        maxWidth: "100vw",
         background: "linear-gradient(60deg, #FFFFFF 10.8%, #FFFFFF 87.34%)",
         minHeight: "100vh",
         display: "flex",
