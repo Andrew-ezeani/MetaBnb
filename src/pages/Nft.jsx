@@ -2,8 +2,8 @@ import React from "react";
 
 const Nft = () => {
   return (
-    <div>
-      <h1>Nft</h1>
+    <div style={{ height: "100vh", display: "grid", placeItems: "center" }}>
+      <h1 style={{ color: "green" }}>Coming Soon!</h1>
     </div>
   );
 };
