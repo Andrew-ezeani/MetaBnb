@@ -7,9 +7,16 @@ import Instagram from "@mui/icons-material/Instagram";
 import Facebook from "@mui/icons-material/Facebook";
 import Twitter from "@mui/icons-material/Twitter";
 import Copyright from "@mui/icons-material/Copyright";
-import { Grid } from "@mui/material";
+import styled from "styled-components";
 
 const Footer = () => {
+  const StyledImg = styled.img`
+    width: "233px";
+
+    @media (max-width: 600px) {
+      width: 30%;
+    }
+  `;
   const GridText = ({ fs, h, type, text }) => {
     return (
       <Typography variant={type} sx={{ fontSize: fs, lineHeight: h }}>
@@ -19,99 +26,148 @@ const Footer = () => {
   };
 
   return (
-    <Container
-      maxWidth={false}
-      sx={{
-        marginTop: "-1.31rem",
-        background: "#1D1D1E",
-        height: "20.125rem",
-        display: "flex",
-        justifyContent: "space-around",
-      }}
-    >
-      <Box
+    <Box style={{ background: "#1D1D1E" }}>
+      <Container
+        // maxWidth={false}
         sx={{
-          marginTop: "1.8rem",
-          height: "80%",
+          padding: "2rem",
+          minHeight: "20.125rem",
           display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-around",
+          flexWrap: "wrap",
+          justifyContent: { xs: "space-around", lg: "space-between" },
         }}
       >
-        <img src={whiteLogo} alt="" width="233px" />
         <Box
           sx={{
-            width: "139px",
+            marginTop: "1.3rem",
+            maxHeight: "100%",
             display: "flex",
-            justifyContent: "space-between",
+            flexDirection: { xs: "row", lg: "column" },
+            justifyContent: { xs: "space-between", lg: "space-around" },
+            alignItems: { xs: "center", lg: "flex-start" },
           }}
         >
-          <Facebook sx={{ color: "#FFF" }} />
-          <Instagram sx={{ color: "#FFF" }} />
-          <Twitter sx={{ color: "#FFF" }} />
+          <StyledImg src={whiteLogo} alt="" />
+          <Box
+            sx={{
+              width: { xs: "33%", lg: "139px" },
+              display: "flex",
+              justifyContent: { xs: "space-evenly", lg: "space-between" },
+            }}
+          >
+            <Facebook
+              sx={{ color: "#FFF", fontSize: { xs: "1rem", sm: "2rem" } }}
+            />
+            <Instagram
+              sx={{ color: "#FFF", fontSize: { xs: "1rem", sm: "2rem" } }}
+            />
+            <Twitter
+              sx={{ color: "#FFF", fontSize: { xs: "1rem", sm: "2rem" } }}
+            />
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: { xs: "flex-end", sm: "flex-start" },
+              gap: { xs: "5px", lg: "10px" },
+              width: { xs: "30%", sm: "100%" },
+            }}
+          >
+            <Copyright
+              sx={{ color: "#FFF", fontSize: { xs: ".8rem", sm: "2rem" } }}
+            />
+            <Typography
+              sx={{ color: "#fff", fontSize: { xs: ".7rem", sm: "1rem" } }}
+            >
+              2022 Metabnb
+            </Typography>
+          </Box>
         </Box>
-        <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <Copyright sx={{ color: "#FFF" }} />
-          <Typography sx={{ color: "#fff" }}>2022 Metabnb</Typography>
+        <Box
+          sx={{
+            width: "698px",
+            display: "flex",
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+            color: "#FFF",
+            marginTop: "3rem",
+          }}
+        >
+          <Box>
+            <GridText
+              type={"h3"}
+              fs={"1.125rem"}
+              h={"1.4"}
+              text={"Community"}
+            />
+            <GridText type={"body1"} fs={"0.875rem"} h={"2.1"} text={"NFTs"} />
+            <GridText
+              type={"body1"}
+              fs={"0.875rem"}
+              h={"2.1"}
+              text={"Tokens"}
+            />
+            <GridText
+              type={"body1"}
+              fs={"0.875rem"}
+              h={"2.1"}
+              text={"Landlords"}
+            />
+            <GridText
+              type={"body1"}
+              fs={"0.875rem"}
+              h={"2.1"}
+              text={"Discord"}
+            />
+          </Box>
+          <Box>
+            <GridText type={"h3"} fs={"1.125rem"} h={"1.4"} text={"Places"} />
+            <GridText
+              type={"body1"}
+              fs={"0.875rem"}
+              h={"2.1"}
+              text={"Castle"}
+            />
+            <GridText type={"body1"} fs={"0.875rem"} h={"2.1"} text={"Farms"} />
+            <GridText type={"body1"} fs={"0.875rem"} h={"2.1"} text={"Beach"} />
+            <GridText
+              type={"body1"}
+              fs={"0.875rem"}
+              h={"2.1"}
+              text={"Learn more"}
+            />
+          </Box>
+          <Box>
+            <GridText type={"h3"} fs={"1.125rem"} h={"1.4"} text={"About us"} />
+            <GridText
+              type={"body1"}
+              fs={"0.875rem"}
+              h={"2.1"}
+              text={"Road map"}
+            />
+            <GridText
+              type={"body1"}
+              fs={"0.875rem"}
+              h={"2.1"}
+              text={"Creators"}
+            />
+            <GridText
+              type={"body1"}
+              fs={"0.875rem"}
+              h={"2.1"}
+              text={"Career"}
+            />
+            <GridText
+              type={"body1"}
+              fs={"0.875rem"}
+              h={"2.1"}
+              text={"Contact us"}
+            />
+          </Box>
         </Box>
-      </Box>
-      <Grid
-        container
-        columnSpacing={5}
-        sx={{
-          width: "698px",
-          color: "#FFF",
-          marginTop: "3rem",
-        }}
-      >
-        <Grid item xs={4}>
-          <GridText type={"h3"} fs={"1.125rem"} h={"1.4"} text={"Community"} />
-          <GridText type={"body1"} fs={"0.875rem"} h={"2.1"} text={"NFTs"} />
-          <GridText type={"body1"} fs={"0.875rem"} h={"2.1"} text={"Tokens"} />
-          <GridText
-            type={"body1"}
-            fs={"0.875rem"}
-            h={"2.1"}
-            text={"Landlords"}
-          />
-          <GridText type={"body1"} fs={"0.875rem"} h={"2.1"} text={"Discord"} />
-        </Grid>
-        <Grid item xs={4}>
-          <GridText type={"h3"} fs={"1.125rem"} h={"1.4"} text={"Places"} />
-          <GridText type={"body1"} fs={"0.875rem"} h={"2.1"} text={"Castle"} />
-          <GridText type={"body1"} fs={"0.875rem"} h={"2.1"} text={"Farms"} />
-          <GridText type={"body1"} fs={"0.875rem"} h={"2.1"} text={"Beach"} />
-          <GridText
-            type={"body1"}
-            fs={"0.875rem"}
-            h={"2.1"}
-            text={"Learn more"}
-          />
-        </Grid>
-        <Grid item xs={4}>
-          <GridText type={"h3"} fs={"1.125rem"} h={"1.4"} text={"About us"} />
-          <GridText
-            type={"body1"}
-            fs={"0.875rem"}
-            h={"2.1"}
-            text={"Road map"}
-          />
-          <GridText
-            type={"body1"}
-            fs={"0.875rem"}
-            h={"2.1"}
-            text={"Creators"}
-          />
-          <GridText type={"body1"} fs={"0.875rem"} h={"2.1"} text={"Career"} />
-          <GridText
-            type={"body1"}
-            fs={"0.875rem"}
-            h={"2.1"}
-            text={"Contact us"}
-          />
-        </Grid>
-      </Grid>
-    </Container>
+      </Container>
+    </Box>
   );
 };
 
