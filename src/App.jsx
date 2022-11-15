@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-// import { Container, Title } from "./components/styles/Container.styled";
 import Home from "./pages/home/Home";
-import Places from "./pages/places/Places";
+import Places from "./pages/Places";
 import Community from "./pages/Community";
 import Nft from "./pages/Nft";
 import SharedLayout from "./components/SharedLayout";

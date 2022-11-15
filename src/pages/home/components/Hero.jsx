@@ -16,6 +16,7 @@ const Hero = () => {
         background: "linear-gradient(60deg, #FFFFFF 10.8%, #FFFFFF 87.34%)",
         minHeight: "100vh",
         display: "flex",
+        flexWrap: "wrap",
         alignItems: "center",
         justifyContent: "space-between",
         gap: "48px",
@@ -23,15 +24,15 @@ const Hero = () => {
     >
       <Box
         sx={{
-          maxWidth: "53%",
+          maxWidth: { xs: "100%", sm: "100%", lg: "53%" },
         }}
       >
         <Typography
           variant="h1"
           sx={{
-            fontSize: "3rem",
+            fontSize: { xs: "2rem", sm: "3rem" },
             color: "#434343",
-            lineHeight: "78px",
+            lineHeight: { xs: "1.3", sm: "78px" },
             marginBottom: "1.7rem",
           }}
         >
@@ -78,20 +79,20 @@ const Hero = () => {
               background:
                 "linear-gradient(90deg, #A02279 11.45%, #A02279 11.46%)",
               borderRadius: "0px 8px 8px 0px",
-              width: "14.375rem",
+              width: { sm: "10rem", lg: "14.375rem" },
               position: "absolute",
               top: "0",
               right: "-2px",
               bottom: "0",
             }}
           >
-            Connect
+            Search
           </Button>
         </Box>
       </Box>
       <Box
         sx={{
-          width: "40%",
+          width: { sm: "100%", lg: "40%" },
         }}
       >
         <img src={heroPhoto} alt="" />

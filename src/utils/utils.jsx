@@ -1,35 +1,22 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import pageData from "./data";
+import Button from "@mui/material/Button";
+import routesData from "../data/routesData";
 import { Link as RouterLink } from "react-router-dom";
 import Link from "@mui/material/Link";
-import Divider from "@mui/material/Divider";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
+import ArrowForwardIos from "@mui/icons-material/ArrowForwardIos";
 
-const pages = pageData.map((page, index) => {
+const routes = routesData.map((route, index) => {
   return (
     <Link
       key={index}
       component={RouterLink}
-      to={page[0]}
+      to={route[0]}
       underline="none"
       sx={{ fontSize: "20px", color: "#434343" }}
     >
-      {page[1]}
+      {route[1]}
     </Link>
-  );
-});
-
-const mobileDevicePages = pageData.map((page, index) => {
-  return (
-    <List key={index}>
-      <ListItem button divider onClick={() => setOpenDrawer(false)}>
-        <Divider />
-        <ListItemText sx={{ textAlign: "center" }}>{pages}</ListItemText>
-      </ListItem>
-    </List>
   );
 });
 
@@ -48,4 +35,41 @@ const GradientText = ({ text }) => {
   );
 };
 
-export { GradientText, pages, mobileDevicePages };
+const WalletBtn = ({ text, image, bg }) => {
+  return (
+    <Button
+      variant="outlined"
+      sx={{
+        width: "100%",
+        padding: "12px 20px",
+        display: "flex",
+        borderRadius: "12px",
+        border: "1px solid #CFD8DC",
+        color: "#000",
+
+        "&:hover": {
+          backgroundColor: "#F8F9FA",
+        },
+      }}
+    >
+      <img
+        src={image}
+        alt=""
+        style={{
+          width: "40px",
+          marginRight: "10px",
+        }}
+      />
+      {text}
+      <ArrowForwardIos
+        sx={{
+          marginLeft: "auto",
+          width: "40px",
+          color: "#959DA6",
+        }}
+      />
+    </Button>
+  );
+};
+
+export { GradientText, routes, WalletBtn };

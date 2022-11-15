@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "./components/Hero";
 import Wallets from "./components/Wallets";
-import DisplayApartments from "../../components/DisplayApartments";
+import DisplayPlaces from "../../components/DisplayPlaces";
 import Container from "@mui/material/Container";
 import NftGiftCard from "./components/GiftCards";
 
@@ -18,7 +18,17 @@ const Home = () => {
         <Hero />
       </Container>
       <Wallets />
-      <DisplayApartments isSlice={true} />
+      <Container
+        maxWidth={false}
+        sx={{
+          border: "2px solid black",
+          maxWidth: "100vw",
+          minHeight: "100vh",
+          marginBottom: "5.31rem",
+        }}
+      >
+        <DisplayPlaces isSlice={true} />
+      </Container>
       <NftGiftCard />
     </>
   );

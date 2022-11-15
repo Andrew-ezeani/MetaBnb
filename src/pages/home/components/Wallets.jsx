@@ -13,6 +13,8 @@ const Wallets = () => {
         alignItems: "center",
         padding: "10px 100px",
         justifyContent: "space-between",
+        marginTop: { xs: "2rem", sm: "4rem" },
+        marginBottom: { xs: "2rem", sm: "4rem" },
       }}
     >
       <Box>
