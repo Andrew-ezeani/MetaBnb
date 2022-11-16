@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter basename="/metabnb/">
+  <BrowserRouter basename="/Metabnb/">
     <GlobalStyles
       styles={{
         img: { width: "100%" },

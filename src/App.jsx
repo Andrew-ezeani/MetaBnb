@@ -15,7 +15,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Routes>
-        <Route path="/Metabnb/" element={<SharedLayout />}>
+        <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
           <Route path="places" element={<Places />} />
           <Route path="community" element={<Community />} />
